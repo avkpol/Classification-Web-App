@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Cats vs Dogs{% endblock %}
+
+{% block content %}
+    <style>
+        body {
+            position: relative;
+            background-image: url("{{ url_for('static', filename='uploads/images/kisspng-dogcat-relationship-dogcat-relationship-tele-5b1e26f3c01fc6.199638361528702707787.png') }}");
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-position: center top;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .custom-file-label::after {
+            content: "Upload an image";
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: -200px;
+        }
+         .custom-file {
+            margin-top: 50px;
+        }
+
+
+    </style>
+    <div id="content">
+        <h1>Find out if in a photo there's a cat or a dog!</h1>
+        <form method="post" enctype="multipart/form-data">
+            {{ form.csrf_token }}
+            <div class="form-row">
+                <div class="col">
+                    <div class="custom-file">
+                        {{ form.image(class="custom-file-input", accept=".jpg,.jpeg,.png,.gif", id="customFile") }}
+                        <label class="custom-file-label" for="customFile" id="fileLabel">No image uploaded</label>
+                        {% if form.image.errors %}
+                            <small class="form-text text-danger">{{ form.image.errors|join }}</small>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col upload-btn">
+                    <button type="submit" class="btn btn-primary">Classify</button>
+                </div>
+            </div>
+        </form>
+
+        {% if filename %}
+            <h2>Uploaded Image:</h2>
+            <img src="{{ url_for('static', filename='uploads/images/' + filename) }}" alt="Uploaded Image">
+        {% endif %}
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('customFile');
+        const fileLabel = document.getElementById('fileLabel');
+
+        fileInput.addEventListener('change', function () {
+            if (fileInput.files.length > 0) {
+                fileLabel.textContent = fileInput.files[0].name;
+            } else {
+                fileLabel.textContent = 'No image uploaded';
+            }
+        });
+    </script>
+{% endblock %}

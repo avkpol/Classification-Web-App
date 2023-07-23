@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+img {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 20px 0;
+}
+
+.back-to-home-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-to-home-btn:hover {
+    background-color: #0056b3;
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+h1 {
+    color: black;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.upload-btn {
+    margin-top: 10px;
+    display: block;
+    margin: 50px;
+}
+
+
+.custom-file-label::after {
+            content: "Upload an image";
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: -200px;
+}
+ .custom-file {
+    margin-top: 50px;
+}
+
+
+.custom-file-input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+.custom-file-label {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150%;
+}
