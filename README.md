@@ -19,9 +19,9 @@
 ***
 
 
-## Examples of the code functionality:
+## Examples of the app functionality:
 
-![Screenshot 2023-07-23 at 09.36.44.png](..%2F..%2F..%2F..%2FDesktop%2FScreenshot%202023-07-23%20at%2009.36.44.png)
-![Screenshot 2023-07-23 at 09.37.20.png](..%2F..%2F..%2F..%2FDesktop%2FScreenshot%202023-07-23%20at%2009.37.20.png)
-![Screenshot 2023-07-23 at 09.38.28.png](..%2F..%2F..%2F..%2FDesktop%2FScreenshot%202023-07-23%20at%2009.38.28.png)
-![Screenshot 2023-07-23 at 09.38.58.png](..%2F..%2F..%2F..%2FDesktop%2FScreenshot%202023-07-23%20at%2009.38.58.png)
+<img width="1672" alt="Screenshot 2023-07-23 at 09 36 44" src="https://github.com/avkpol/Classification-Web-App/assets/10571459/832e380b-a2e2-4fef-a5b7-2baa4e000e1e">
+<img width="1674" alt="Screenshot 2023-07-23 at 09 37 20" src="https://github.com/avkpol/Classification-Web-App/assets/10571459/15abd562-037f-4446-a4ec-eb57b4620f68">
+<img width="1669" alt="Screenshot 2023-07-23 at 09 38 28" src="https://github.com/avkpol/Classification-Web-App/assets/10571459/46c2ba67-2ce5-4d60-af07-af317ac3ddab">
+<img width="1664" alt="Screenshot 2023-07-23 at 09 38 58" src="https://github.com/avkpol/Classification-Web-App/assets/10571459/6291cb79-2143-4057-a440-9106386f16d6">
