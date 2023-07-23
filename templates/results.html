@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Classification Results{% endblock %}
+
+{% block content %}
+    <div id="content">
+        <h1>Classification Results</h1>
+        <h2>Uploaded Image:</h2>
+        <img src="{{ url_for('static', filename='uploads/images/' + filename) }}" alt="Uploaded Image">
+        <h2>Classification Result:</h2>
+        {% if prob < 75 %}
+            <p><span style="font-weight: bold; color: red;">Uploaded image likely neither cat, nor dog.</span></p>
+        {% else %}
+            <p><span style="font-weight: bold; color: blue;">The uploaded image is classified as: {{ label }}</span></p>
+            <p>Probability: {{ prob }}%</p>
+        {% endif %}
+        <a class="back-to-home-btn" href="/">Back to Home</a>
+    </div>
+{% endblock %}
